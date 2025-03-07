@@ -1,0 +1,2 @@
+#DEFINE DIGIT [0-9]
+#DEFINE ID [a-z][a-z0-9]*

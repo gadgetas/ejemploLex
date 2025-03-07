@@ -282,11 +282,16 @@ static void yy_fatal_error YY_PROTO(( yyconst char msg[] ));
 	*yy_cp = '\0'; \
 	yy_c_buf_p = yy_cp;
 
-#define YY_NUM_RULES 3
-#define YY_END_OF_BUFFER 4
-static yyconst short int yy_accept[7] =
+#define YY_NUM_RULES 19
+#define YY_END_OF_BUFFER 20
+static yyconst short int yy_accept[55] =
     {   0,
-        0,    0,    4,    2,    1,    0
+        0,    0,   20,   16,   17,   18,   18,   16,    0,    0,
+        0,    0,    0,    0,    0,    0,    0,    0,    0,    1,
+        0,    0,    0,    0,    0,    0,    4,    0,    0,    0,
+        0,    0,    2,    3,    0,   11,    9,   13,    5,    6,
+        0,   12,   10,   14,    0,    0,    0,    0,    0,    0,
+       15,    7,    8,    0
     } ;
 
 static yyconst int yy_ec[256] =
@@ -295,15 +300,15 @@ static yyconst int yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    3,    1,    1,    1,    4,    1,    5,    6,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    7,
+        1,    8,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        9,    1,   10,   11,    1,    1,   12,   13,    1,   14,
 
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+       15,    1,    1,   16,    1,    1,    1,   17,    1,    1,
+        1,   18,    1,   19,    1,   20,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -321,29 +326,54 @@ static yyconst int yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static yyconst int yy_meta[3] =
+static yyconst int yy_meta[21] =
     {   0,
-        1,    1
+        1,    2,    1,    1,    1,    1,    2,    2,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1
     } ;
 
-static yyconst short int yy_base[7] =
+static yyconst short int yy_base[57] =
     {   0,
-        0,    0,    3,    4,    4,    4
+        0,    2,   56,    0,   57,    7,   57,    0,    1,   44,
+        0,   46,   16,    7,   45,   24,   44,   43,   42,   57,
+       36,   40,   39,   38,   34,   33,   57,   26,   29,   26,
+       25,   21,   57,   57,   12,   57,   57,   57,   57,   57,
+        9,   57,   57,   57,   21,    7,    5,   10,    7,    6,
+       57,   57,   57,   57,   43,    0
     } ;
 
-static yyconst short int yy_def[7] =
+static yyconst short int yy_def[57] =
     {   0,
-        6,    1,    6,    6,    6,    0
+       55,   55,   54,   56,   54,   54,   54,   56,   54,   54,
+       54,   54,   54,   54,   54,   54,   54,   54,   54,   54,
+       54,   54,   54,   54,   54,   54,   54,   54,   54,   54,
+       54,   54,   54,   54,   54,   54,   54,   54,   54,   54,
+       54,   54,   54,   54,   54,   54,   54,   54,   54,   54,
+       54,   54,   54,    0,   54,   54
     } ;
 
-static yyconst short int yy_nxt[7] =
+static yyconst short int yy_nxt[78] =
     {   0,
-        4,    5,    6,    3,    6,    6
+        8,    5,   54,    5,   18,   19,    6,    7,    6,    7,
+        9,   25,   26,   53,   52,   10,   14,   51,   15,   50,
+       16,   49,   11,   48,   12,   47,   13,   21,   46,   22,
+       45,   23,   44,   43,   24,   28,   42,   29,   41,   30,
+       40,   39,   31,    4,    4,   38,   37,   36,   35,   34,
+       33,   32,   27,   20,   17,   54,    3,   54,   54,   54,
+       54,   54,   54,   54,   54,   54,   54,   54,   54,   54,
+       54,   54,   54,   54,   54,   54,   54
     } ;
 
-static yyconst short int yy_chk[7] =
+static yyconst short int yy_chk[78] =
     {   0,
-        1,    1,    3,    6,    6,    6
+       56,    1,    0,    2,   11,   11,    1,    1,    2,    2,
+        6,   14,   14,   50,   49,    6,    9,   48,    9,   47,
+        9,   46,    6,   45,    6,   41,    6,   13,   35,   13,
+       32,   13,   31,   30,   13,   16,   29,   16,   28,   16,
+       26,   25,   16,   55,   55,   24,   23,   22,   21,   19,
+       18,   17,   15,   12,   10,    3,   54,   54,   54,   54,
+       54,   54,   54,   54,   54,   54,   54,   54,   54,   54,
+       54,   54,   54,   54,   54,   54,   54
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -357,11 +387,26 @@ static char *yy_last_accepting_cpos;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "ejemplo1.l"
+#line 1 ".\\parserChatGPT.l"
 #define INITIAL 0
-#line 2 "ejemplo1.l"
- int num_lines = 0, num_chars = 0;
-#line 365 "lex.yy.c"
+#line 2 ".\\parserChatGPT.l"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int dentro_etiqueta = 0;  // Bandera para saber si estamos dentro de una etiqueta de interés
+int dentro_tabla = 0;    // Bandera para indicar si estamos dentro de una tabla
+int dentro_celda = 0;    // Bandera para capturar texto dentro de <th> o <td>
+int primera_fila = 1;    // Indica si es la primera fila (para imprimir línea de separación)
+
+void imprimir_linea() {
+    printf("+----------------+----------------+----------------+\n");
+}
+
+void imprimir_celda(const char *contenido) {
+    printf("| %-14s ", contenido);
+}
+#line 410 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -512,9 +557,9 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 4 "ejemplo1.l"
+#line 20 ".\\parserChatGPT.l"
 
-#line 518 "lex.yy.c"
+#line 563 "lex.yy.c"
 
 	if ( yy_init )
 		{
@@ -565,13 +610,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 7 )
+				if ( yy_current_state >= 55 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 4 );
+		while ( yy_base[yy_current_state] != 57 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -599,20 +644,102 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 5 "ejemplo1.l"
-++num_lines; ++num_chars;
+#line 21 ".\\parserChatGPT.l"
+{ dentro_etiqueta = 1; } 
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 6 "ejemplo1.l"
-++num_chars;
+#line 22 ".\\parserChatGPT.l"
+{ dentro_etiqueta = 1; } 
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 7 "ejemplo1.l"
+#line 23 ".\\parserChatGPT.l"
+{ dentro_etiqueta = 1; } 
+	YY_BREAK
+case 4:
+YY_RULE_SETUP
+#line 24 ".\\parserChatGPT.l"
+{ dentro_etiqueta = 0; printf("\n"); } 
+	YY_BREAK
+case 5:
+YY_RULE_SETUP
+#line 25 ".\\parserChatGPT.l"
+{ dentro_etiqueta = 0; printf("\n"); } 
+	YY_BREAK
+case 6:
+YY_RULE_SETUP
+#line 26 ".\\parserChatGPT.l"
+{ dentro_etiqueta = 0; printf("\n"); } 
+	YY_BREAK
+case 7:
+YY_RULE_SETUP
+#line 28 ".\\parserChatGPT.l"
+{ dentro_tabla = 1; imprimir_linea(); } 
+	YY_BREAK
+case 8:
+YY_RULE_SETUP
+#line 29 ".\\parserChatGPT.l"
+{ dentro_tabla = 0; imprimir_linea(); printf("\n"); } 
+	YY_BREAK
+case 9:
+YY_RULE_SETUP
+#line 31 ".\\parserChatGPT.l"
+{ dentro_celda = 1; }
+	YY_BREAK
+case 10:
+YY_RULE_SETUP
+#line 32 ".\\parserChatGPT.l"
+{ dentro_celda = 0; if (primera_fila) printf("|"); } 
+	YY_BREAK
+case 11:
+YY_RULE_SETUP
+#line 34 ".\\parserChatGPT.l"
+{ dentro_celda = 1; }
+	YY_BREAK
+case 12:
+YY_RULE_SETUP
+#line 35 ".\\parserChatGPT.l"
+{ dentro_celda = 0; printf("|"); } 
+	YY_BREAK
+case 13:
+YY_RULE_SETUP
+#line 37 ".\\parserChatGPT.l"
+{ if (!primera_fila) imprimir_linea(); } 
+	YY_BREAK
+case 14:
+YY_RULE_SETUP
+#line 38 ".\\parserChatGPT.l"
+{ printf("\n"); primera_fila = 0; }
+	YY_BREAK
+case 15:
+YY_RULE_SETUP
+#line 43 ".\\parserChatGPT.l"
+{ /* Ignora otras etiquetas HTML */ }
+	YY_BREAK
+case 16:
+YY_RULE_SETUP
+#line 45 ".\\parserChatGPT.l"
+{ if (dentro_etiqueta) printf("%s ", yytext);
+             if (dentro_tabla && dentro_celda) printf("%s ", yytext); /*imprimir_celda(yytext);*/
+           }
+	YY_BREAK
+case 17:
+YY_RULE_SETUP
+#line 49 ".\\parserChatGPT.l"
+{ /* Ignorar saltos de línea */ }
+	YY_BREAK
+case 18:
+YY_RULE_SETUP
+#line 50 ".\\parserChatGPT.l"
+{ /* Ignorar otros caracteres */ }
+	YY_BREAK
+case 19:
+YY_RULE_SETUP
+#line 51 ".\\parserChatGPT.l"
 ECHO;
 	YY_BREAK
-#line 616 "lex.yy.c"
+#line 743 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -904,7 +1031,7 @@ static yy_state_type yy_get_previous_state()
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 7 )
+			if ( yy_current_state >= 55 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
@@ -939,11 +1066,11 @@ yy_state_type yy_current_state;
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 7 )
+		if ( yy_current_state >= 55 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
-	yy_is_jam = (yy_current_state == 6);
+	yy_is_jam = (yy_current_state == 54);
 
 	return yy_is_jam ? 0 : yy_current_state;
 	}
@@ -1498,12 +1625,28 @@ int main()
 	return 0;
 	}
 #endif
-#line 7 "ejemplo1.l"
+#line 51 ".\\parserChatGPT.l"
 
-int main()
-{
-    yyin = fopen( "texto.txt", "r" );
+
+int main(int argc, char **argv) {
+    if (argc < 2) {
+        fprintf(stderr, "Uso: %s <archivo.html>\n", argv[0]);
+        return 1;
+    }
+
+    FILE *archivo = fopen(argv[1], "r");
+    if (!archivo) {
+        perror("Error al abrir el archivo");
+        return 1;
+    }
+
+    yyin = archivo;
     yylex();
-    printf( "# of lines = %d, # of chars = %d\n", num_lines, num_chars );
+
+    fclose(archivo);
     return 0;
+}
+
+int yywrap() {
+    return 1;
 }
